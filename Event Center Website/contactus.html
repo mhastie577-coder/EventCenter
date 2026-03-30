@@ -1,61 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="styles.css" class="stylesheet" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <title>MoosePack208 - Outdoor Camping Adventures</title>
 
-  <!--Information for help: I have only tried on this the contactus file to get it to fit on different screen types, as I don't want to mess them all up. I went back through the Media Query lesson and then the Hamburger Icon lesson to try and get it. I hope I didn't mess up my page too much. It's probably incredibly simple but I have spent several days trying to figure it out. Thank you for any and all help.-->
-  
-  
-  <body>
-    <header>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="https://kit.fontawesome.com/284340093f.js" crossorigin="anonymous"></script>
+    </head>
 
-      <!-- Navigation Bar -->
-<div class="navbar">
-  <!-- Logo -->
-  <a href="http://127.0.0.1:5500/index.html" class="logo"
-        >Moose<span>Pack</span>208</a>
-  
-  <!-- Hamburger Icon for Mobile View -->
-  <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
-  
-  <!-- Navigation Menu -->
-  <div id="menu" class="menu">
-      <ul class="navigation">
-        <li><a href="http://127.0.0.1:5500/about.html">About Us</a></li>
-        <li><a href="http://127.0.0.1:5500/events.html">Events</a></li>
-        <li><a href="http://127.0.0.1:5500/contactus.html">Contact Us</a></li>
-      </ul>
-  </div>
-</div>
-</div>
+    <body>
 
+      <header>
+        <a href="/" class="logo" aria-label="MoosePack208 Home">Moose<span>Pack</span>208</a>
+             <nav aria-label="Primary navigation"></nav>
 
-
-<!-- JavaScript for Toggling the Menu -->
-<script>
-  function toggleMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("active");
-  }
-</script>
-
-    </header>
+            <ul class="navigation">
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/events.html">Events</a></li>
+                <li><a href="/contactus.html">Contact Us</a></li>
+            </ul>
+        </header>
+    
 
     <section class="contactus">
       <div class="title">
         <h4 class="titleText">Contact Us</h4>
-        <p8>Book online or give us a call at 555-123-4567</p8>
+        <p class="booking">Book online or give us a call at 555-123-4567</p>
       </div>
       <form action="#">
         <div class="contactform">
@@ -79,16 +51,19 @@
 
       </form>
     </section>
-                <footer class="footer">
-                <p>Design and Code by Michael Hastie</p>
-                <div class="icons">
-                    <a href="https://www.youtube.com/channel/UCMdX78NoDJAe2M-22loenjg"><i class="fa-brands fa-youtube"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                </div>
-
-                
-
-            </footer>
+                <footer>
+    <p>Design and Code by Michael Hastie</p>
+    <div class="icons">
+      <a href="https://www.youtube.com/@moosepack208" aria-label="YouTube">
+        <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+      </a>
+      <a href="#" aria-label="GitHub">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+      </a>
+      <a href="#" aria-label="X (Twitter)">
+        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+      </a>
+    </div>
+  </footer>
   </body>
 </html>
